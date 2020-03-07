@@ -1,0 +1,46 @@
+.navigation{
+    margin-top: 8rem;
+
+}
+
+nav .navigation__link{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+a.navigation__link{
+    font-size: 3.5rem;
+    font-family: nuckle-medium;
+    text-decoration: none;  
+    color: $color-primary;
+    transition: color .3s;
+    font-weight: bold;
+
+
+}
+
+a.navigation__link:hover{
+    text-decoration: underline;
+    color: $color-tertiary;
+
+
+}
+
+.contact{
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    &-header{
+        font-weight: bold;
+    }
+
+    &-box{
+        margin-top: 4rem;
+    }
+
+
+    &-detail:hover{
+        color: $color-tertiary;
+        text-decoration: underline;
+    }
+}

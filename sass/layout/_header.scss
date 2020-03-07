@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    width: 16rem;
+    color: $color-primary;
+}
+
+
+.header__hamburger{
+    background: $color-primary;
+    z-index: 10000;
+    cursor: pointer;
+
+    &{
+        position: relative;
+    }
+    &,
+    &::before,
+    &::after{
+        width: 2.5rem;
+        height: .2rem;
+        background: $color-primary;
+        transition: all 600ms;
+
+    }
+
+    &::before,
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+
+    &::after{
+       top: .7rem;
+    }
+
+    &::before{
+        top: -.7rem;
+     }
+
+
+    
+}
+
+.header__hamburger.active{
+    &{
+        background-color: transparent;
+    }
+    
+
+    &::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    &::before{
+        transform: rotate(-45deg); 
+        top: 0;   
+    }
+}

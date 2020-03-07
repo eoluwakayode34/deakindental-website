@@ -1,0 +1,54 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 87.5%;
+}
+
+body{
+    font-family: nuckle;
+    font-size: inherit;
+    line-height: 1.7;
+    box-sizing: border-box;  
+    font-weight: 300;  
+
+}
+
+$color-primary: #FDE5E6;
+$color-secondary: #333570;
+$color-tertiary: rgb(255, 99, 64);
+
+
+@font-face{
+    font-family: nuckle;
+    src: url(/font/nuckle-medium.otf) format("opentype");
+}
+
+
+@font-face{
+    font-family: nuckle-medium;
+    src: url(/font/nuckle-medium.otf) format("opentype");
+}
+
+@font-face{
+    font-family: nuckle-semi-medium;
+    src: url(/font/nuckle-semi-bold.otf) format("opentype");
+}
+
+
+.heading-primary{
+    font-family: nuckle-medium;
+    font-size: 3.5rem;
+    color: $color-primary;
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+
+
+
+.container{
+    display: flex;
+}

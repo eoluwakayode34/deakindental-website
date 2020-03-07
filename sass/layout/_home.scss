@@ -1,0 +1,101 @@
+.home{
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    background: $color-secondary;
+    color: $color-primary;
+    
+}
+
+.home-container{
+    width: 75%;
+    margin: 4rem auto;
+}
+
+
+
+.home::-webkit-scrollbar{
+    display: none;
+    width: 20px;
+    background: green;
+    padding: 2rem;
+    }
+
+
+//     .home::-webkit-scrollbar-thumb{
+//     width: 8px;
+//     background: yellow;
+//     border-radius: 2rem;
+// }
+
+// .home::-webkit-scrollbar-button{
+//     display: none;
+// }
+
+// .home::-webkit-scrollbar-track{
+//     background: white;
+// }
+
+.description{
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.display-none{
+    background-color: red;
+}
+.home-link{
+    font-size: 1.5rem;
+    color: $color-primary;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+
+    &:not(:first-child){
+        margin-top: 2rem;
+    }
+}
+
+.link-home{
+    margin-top: 4rem;
+}
+.link-text{
+    margin-right: 1rem;
+}
+
+.acredited{
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+
+    &__image{
+        width: 9rem;
+        margin-right: 2rem;
+    }
+
+    &__text{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+
+
+.navigation{
+    display: none;
+}
+
+.navigation.active{
+    display: block
+}
+
+.section-our-practice{
+    display: block;
+}
+
+.section-our-practice.active{
+    display: none;
+}
